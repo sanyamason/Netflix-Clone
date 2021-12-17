@@ -33,7 +33,7 @@
     "redux-testkit": "^1.0.6",
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
-    "resolve": "1.6.0",
+    "resolve": "1.20.0",
     "validator": "^10.9.0",
     "whatwg-fetch": "2.0.3"
   },
