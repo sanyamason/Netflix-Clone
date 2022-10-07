@@ -7,7 +7,9 @@
     "start": "cross-env NODE_ENV=development nodemon --exec babel-node src/index.js",
     "build": "babel src -d build",
     "test-esclient": "node ./src/config/__test__/ESClient.config.test.js",
-    "serve": "cross-env NODE_ENV=production SERVER_URL=http://localhost PORT=3030 node build/index.js"
+    "serve": "cross-env NODE_ENV=production SERVER_URL=http://localhost PORT=3030 node build/index.js",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +17,8 @@
     "dotenv": "^6.2.0",
     "elasticsearch": "^15.2.0",
     "jayson": "^2.1.0",
-    "winston": "^3.1.0"
+    "winston": "^3.1.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -79,5 +82,6 @@
       "camelcase": 0,
       "prefer-destructuring": 0
     }
-  }
+  },
+  "snyk": true
 }
